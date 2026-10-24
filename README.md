@@ -34,4 +34,4 @@ The signed 12-bit speed definition conflicts with the DBC's positive maximum. Sp
 - `results/`: project-specific evidence and clearly labeled analytical results.
 - `MANIFEST.csv`: file sizes and SHA-256 checksums for the upload package.
 
-Upload the **contents of this GitHub folder** as the root of one repository. This project is independent and does not use either of the other project folders. The README at the repository root is mirrored inside `report/` as requested. Relative links in each copy are adjusted for its location.
+
