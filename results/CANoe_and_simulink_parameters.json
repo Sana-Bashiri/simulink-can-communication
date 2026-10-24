@@ -1,0 +1,107 @@
+{
+  "model": "CANoe_and_simulink.slx",
+  "basis": "Saved native parameters, statically inspected; not a new simulation",
+  "blocks": [
+    {
+      "name": "CAN Configuration",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Configuration",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "BusSpeed": "125000"
+      }
+    },
+    {
+      "name": "CAN Receive",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Receive",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "SampleTime": "0.01"
+      }
+    },
+    {
+      "name": "CAN Receive1",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Receive",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "SampleTime": "0.01"
+      }
+    },
+    {
+      "name": "CAN Receive2",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Receive",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "SampleTime": "0.01"
+      }
+    },
+    {
+      "name": "CAN Unpack1",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Unpack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "MMU_MSG",
+        "MsgIdentifier": "1072"
+      }
+    },
+    {
+      "name": "CAN Unpack2",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Unpack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "ICM_MSG",
+        "MsgIdentifier": "544"
+      }
+    },
+    {
+      "name": "CAN Unpack3",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Unpack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "EMS_MSG_1",
+        "MsgIdentifier": "257"
+      }
+    },
+    {
+      "name": "Circular Gauge",
+      "type": "CustomWebBlock",
+      "parameters": {}
+    },
+    {
+      "name": "Display5",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display6",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display7",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display8",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display9",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Fuel",
+      "type": "LampBlock",
+      "parameters": {}
+    }
+  ]
+}

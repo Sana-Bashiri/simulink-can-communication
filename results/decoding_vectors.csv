@@ -1,0 +1,10 @@
+case,frame_id,payload_hex,expected_value,basis
+speed_0,0x101,00 00 00 00 00 00 00 00,DBC signed: 0 km/h; unsigned candidate: 0,Calculated from unchanged 12-bit field; not measured
+speed_800,0x101,20 03 00 00 00 00 00 00,DBC signed: 100 km/h; unsigned candidate: 100,Calculated from unchanged 12-bit field; not measured
+speed_960,0x101,C0 03 00 00 00 00 00 00,DBC signed: 120 km/h; unsigned candidate: 120,Calculated from unchanged 12-bit field; not measured
+speed_1000,0x101,E8 03 00 00 00 00 00 00,DBC signed: 125 km/h; unsigned candidate: 125,Calculated from unchanged 12-bit field; not measured
+speed_1600,0x101,40 06 00 00 00 00 00 00,DBC signed: 200 km/h; unsigned candidate: 200,Calculated from unchanged 12-bit field; not measured
+speed_2048,0x101,00 08 00 00 00 00 00 00,DBC signed: -256 km/h; unsigned candidate: 256,Calculated from unchanged 12-bit field; not measured
+speed_4094,0x101,FE 0F 00 00 00 00 00 00,DBC signed: -0.25 km/h; unsigned candidate: 511.75,Calculated from unchanged 12-bit field; not measured
+fuel_low,0x220,40 00 00 00 00 00 00 00,Fuel state 1,Calculated bit-field position
+clock,0x430,28 23 0E 00 00 00 00 00,14:35:40,Calculated payload

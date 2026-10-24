@@ -1,0 +1,257 @@
+{
+  "model": "SIMULINK.slx",
+  "basis": "Saved native parameters, statically inspected; not a new simulation",
+  "blocks": [
+    {
+      "name": "CAN Configuration",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Configuration",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "BusSpeed": "125000"
+      }
+    },
+    {
+      "name": "CAN Pack",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Pack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "EMS_MSG_1",
+        "MsgIdentifier": "257"
+      }
+    },
+    {
+      "name": "CAN Pack1",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Pack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "ICM_MSG",
+        "MsgIdentifier": "544"
+      }
+    },
+    {
+      "name": "CAN Pack2",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Pack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "MMU_MSG",
+        "MsgIdentifier": "1072"
+      }
+    },
+    {
+      "name": "CAN Receive",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Receive",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "SampleTime": "0.01"
+      }
+    },
+    {
+      "name": "CAN Receive1",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Receive",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "SampleTime": "0.01"
+      }
+    },
+    {
+      "name": "CAN Receive2",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Receive",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "SampleTime": "0.01"
+      }
+    },
+    {
+      "name": "CAN Transmit1",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Transmit",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "EnableEventTransmit": "on",
+        "EnablePeriodicTransmit": "on",
+        "MessagePeriod": "1.000"
+      }
+    },
+    {
+      "name": "CAN Transmit2",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Transmit",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "EnableEventTransmit": "on",
+        "EnablePeriodicTransmit": "on",
+        "MessagePeriod": "1.000"
+      }
+    },
+    {
+      "name": "CAN Transmit3",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canlib/CAN Transmit",
+        "Device": "Vector VN1630 1 (Channel 1)",
+        "EnableEventTransmit": "on",
+        "EnablePeriodicTransmit": "on",
+        "MessagePeriod": "1.000"
+      }
+    },
+    {
+      "name": "CAN Unpack1",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Unpack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "MMU_MSG",
+        "MsgIdentifier": "1072"
+      }
+    },
+    {
+      "name": "CAN Unpack2",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Unpack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "ICM_MSG",
+        "MsgIdentifier": "544"
+      }
+    },
+    {
+      "name": "CAN Unpack3",
+      "type": "Reference",
+      "parameters": {
+        "SourceBlock": "canmsglib/CAN Unpack",
+        "CANdbFile": "ATLAS_database.dbc",
+        "MsgName": "EMS_MSG_1",
+        "MsgIdentifier": "257"
+      }
+    },
+    {
+      "name": "Circular Gauge",
+      "type": "CustomWebBlock",
+      "parameters": {}
+    },
+    {
+      "name": "Constant",
+      "type": "Constant",
+      "parameters": {}
+    },
+    {
+      "name": "Constant1",
+      "type": "Constant",
+      "parameters": {}
+    },
+    {
+      "name": "Constant2",
+      "type": "Constant",
+      "parameters": {
+        "SampleTime": "1"
+      }
+    },
+    {
+      "name": "Display1",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display2",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display3",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display4",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display5",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display6",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display7",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display8",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Display9",
+      "type": "Display",
+      "parameters": {}
+    },
+    {
+      "name": "Fuel",
+      "type": "LampBlock",
+      "parameters": {}
+    },
+    {
+      "name": "MATLAB Function",
+      "type": "SubSystem",
+      "parameters": {}
+    },
+    {
+      "name": "Manual Switch",
+      "type": "ManualSwitch",
+      "parameters": {}
+    },
+    {
+      "name": "Slider1",
+      "type": "SliderBlock",
+      "parameters": {}
+    },
+    {
+      "name": " Demux ",
+      "type": "Demux",
+      "parameters": {}
+    },
+    {
+      "name": " Ground ",
+      "type": "Ground",
+      "parameters": {}
+    },
+    {
+      "name": " SFunction ",
+      "type": "S-Function",
+      "parameters": {}
+    },
+    {
+      "name": " Terminator ",
+      "type": "Terminator",
+      "parameters": {}
+    },
+    {
+      "name": "hour",
+      "type": "Outport",
+      "parameters": {}
+    },
+    {
+      "name": "min",
+      "type": "Outport",
+      "parameters": {}
+    },
+    {
+      "name": "sec",
+      "type": "Outport",
+      "parameters": {}
+    }
+  ]
+}
