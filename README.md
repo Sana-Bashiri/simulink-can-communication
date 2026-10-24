@@ -1,6 +1,6 @@
 # Database-Driven CAN Communication and Dashboard Modeling in Simulink
 
-**Sana Gholipour Bashiri**
+
 
 Two database-driven MATLAB/Simulink CAN models for signal generation, transmission, reception, and dashboard visualization.
 
