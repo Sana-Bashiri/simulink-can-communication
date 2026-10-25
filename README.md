@@ -29,7 +29,7 @@ The signed 12-bit speed definition conflicts with the DBC's positive maximum. Sp
 
 ## Repository layout
 
-- `report/`: six-page academic repor.
+- `report/`: six-page report.
 - `simulation/`: native project/model sources and environment requirements.
 - `results/`: project-specific evidence and clearly labeled analytical results.
 - `MANIFEST.csv`: file sizes and SHA-256 checksums for the upload package.
